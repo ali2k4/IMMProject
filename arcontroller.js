@@ -16,7 +16,7 @@ window.addEventListener('load', function() {
     ready: function() {
       awe.util.require([
         {
-          capabilities: ['gum','webgl'],//add gyro
+          capabilities: ['gum','webgl'],
           files: [ 
             ['lib/awe-standard-dependencies.js', 'lib/awe-standard.js'],
             'lib/awe-standard-window_resized.js',
@@ -45,14 +45,7 @@ window.addEventListener('load', function() {
             }, {poi_id: 'marker'});
 
             awe.projections.add({
-              id: 'ar_button_one',
-              // geometry: {shape: 'sphere', radius: 30},
-              // rotation: {y: 45},
-              // position: {x: -5, y: -31, z: -5},
-              // material: {
-              //   type: 'phong',
-              //   color: 0xFF0000
-              
+              id: 'ar_button_one',                   
               geometry: {shape: 'cube', x: 60, y: 30, z: 5},
               rotation: {y: 15},
               texture: {path: 'assets/tour.png'},
@@ -165,7 +158,6 @@ window.addEventListener('load', function() {
                           duration: 1
                         },
                         position: {x: -60, y: 70},
-                        //rotation: {x: -25}
                       },
                       where: {id: 'ar_button_two'}
                     });
